@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GradeBook.Enums
+namespace GradeBooks.Enums
 {
     public enum GradeBookType
     {

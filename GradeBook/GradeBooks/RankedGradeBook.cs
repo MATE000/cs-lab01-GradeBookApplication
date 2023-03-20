@@ -22,7 +22,7 @@ namespace GradeBook.GradeBooks
            
 
             //how many students make up 20%
-            int students = (int)Students.Count * 2/10;
+            int students = Students.Count * 2/10;
 
             //average grades (list)
             List<double> averageGrades = Students.Select(n => n.AverageGrade).ToList();

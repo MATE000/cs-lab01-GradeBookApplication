@@ -10,7 +10,7 @@ using GradeBook.Enums;
 
 namespace GradeBook.GradeBooks
 {
-    public class BaseGradeBook
+    public abstract class BaseGradeBook
     {
 
         public GradeBookType Type { get; set; }

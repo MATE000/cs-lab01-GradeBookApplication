@@ -22,7 +22,7 @@ namespace GradeBook.GradeBooks
            
 
             //how many students make up 20%
-            int students = (int)(Students.Count * 0.2);
+            int students = (int)Students.Count * 2/10;
 
             //average grades (list)
             List<double> averageGrades = Students.Select(n => n.AverageGrade).ToList();
@@ -31,13 +31,13 @@ namespace GradeBook.GradeBooks
             averageGrades.OrderBy(n => n);
 
 
-            if (averageGrades[students] <= averageGrade)
+            if (averageGrades[students] < averageGrade)
                 return 'A';
-            else if (averageGrades[students * 2] <= averageGrade)
+            else if (averageGrades[students * 2] < averageGrade)
                 return 'B';
-            else if (averageGrades[students * 3] <= averageGrade)
+            else if (averageGrades[students * 3] < averageGrade)
                 return 'C';
-            else if (averageGrades[students * 4] <= averageGrade)
+            else if (averageGrades[students * 4] < averageGrade)
                 return 'D';
             else
                 return 'F';
